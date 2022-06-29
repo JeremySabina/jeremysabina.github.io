@@ -5,6 +5,10 @@
     text-decoration: none;   
 }
 
+h1 span{
+    color: green;
+}
+
 .header{
     width: 100%;
     height: 80px;
@@ -63,4 +67,13 @@
     color: white;
     font-family: 'Montserrat';
     font-size: 16px;
+}
+
+.navigation a li:hover{
+    color: green;
+    font-weight: bold;
+    text-shadow: -1px 1px 2px #fff,
+				  1px 3px 2px #fff,
+				  1px -1px 0 #fff,
+				  -1px -1px 0 #fff;
 }
