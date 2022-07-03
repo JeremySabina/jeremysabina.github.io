@@ -113,9 +113,72 @@ img{
     padding: 2rem 0 4rem;
 }
 
+.section_title{
+    font-size: var(--h1-font-size);
+}
+
+.section_subtitle{
+    display: block;
+    font-size: var(--small-font-size);
+    margin-bottom: var(--mb-0-3);
+}
+
+.section_title,
+.section_subtitle{
+    text-align: center;
+}
 
 
+.container{
+    min-width: 768px;
+    margin-left: var(--mb-0-1-5);
+    margin-right: var(--mb-0-1-5);
+}
 
+.grid{
+    display: grid;
+    gap: 1.5rem;
+}
+
+
+.header{
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: var(--z-fixed);
+    background-color: var(--body-color);
+}
+
+
+/* == Nav Bar ==*/
+.nav{
+    max-width: 968px;
+    height: var(--header-height);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav__logo,
+.nav__toggle{
+    color: var(--title-color);
+    font-weight: var(--font-medium);
+}
+
+.nav__logo:hover{
+    color: var(--first-color);
+}
+
+.nav__toggle{
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+
+.nav__toggle:hover{
+    color: var(--first-color);
+}
+
+/* 
 
 .bg{
     background: url('https://cdn.dribbble.com/users/77598/screenshots/3860676/media/ef7fbad9d9ce1f5f6f2eea037b8eda29.png?compress=1&resize=400x300') no-repeat center center/cover;
@@ -210,4 +273,4 @@ h1 span{
 				  1px 3px 2px #fff,
 				  1px -1px 0 #fff,
 				  -1px -1px 0 #fff;
-}
+} */
