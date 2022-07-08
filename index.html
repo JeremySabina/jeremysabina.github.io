@@ -1,14 +1,17 @@
-<!DOCTYPE html>
-<html lang="en">
-
 <!-- TODO
 - Fix profile picture in home
 - Fix qualifications bar
 - Fix Slider for projects
  -->
+ 
+<!DOCTYPE html>
+<html lang="en">
 
 
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <!--Unicons-->
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
 <!--Swiper-->
@@ -32,7 +35,7 @@
             <div class="nav__menu" id="nav-menu">
                 <ul class="nav__list grid">
                 <li class="nav__item">
-                    <a href="#home" class="nav__link">
+                    <a href="#home" class="nav__link active-link">
                         <i class="uil uil-estate nav__icon"></i> Home
                     </a>
                 </li>
@@ -65,6 +68,8 @@
                 <i class="uil uil-times nav__close" id="nav-close"></i>
             </div>
             <div class="nav__btns">
+                <!-- Theme change button -->
+                <i class="uil uil-moon change-theme" id="theme-button"></i>
                 <div class="nav__toggle" id="nav-toggle">
                     <i class="uil uil-apps"></i>
                 </div>
@@ -813,7 +818,7 @@
                 </div>
                 <div class="contact__content">
                     <label for="" class="contact__label">Email</label>
-                    <input type="text" class="contact__input">
+                    <input type="email" class="contact__input">
                 </div>
                 <div class="contact__content">
                     <label for="" class="contact__label">Project</label>
@@ -825,7 +830,7 @@
                 </div>
 
                 <div>
-                    <a href="" class="button button--flex">
+                    <a href="#" class="button button--flex">
                         Send Message
                         <i class="uil uil-message button__icon"></i>
                     </a>
@@ -835,28 +840,61 @@
 
 
     </div>
-</section>
-
-
-
-
-
-<!-- Main HTML -->
-
-
-
-
-
-<!-- Main HTML -->
-
-
-
-
-<!-- Main HTML -->
-
-
-
+    </section>
 </main>
+
+<!-- Footer HTML -->
+
+<footer class="footer">
+    <div class="footer__bg">
+        <div class="footer__container container grid">
+            <div>
+                <h1 class="footer__title">Jeremy</h1>
+                <span class="footer__subtitle">Front End developer</span>
+            </div>
+
+            <ul class="footer__links">
+                <li>
+                    <a href="#services" class="footer__link">Services</a>
+                </li>
+                <li>
+                    <a href="#portfolio" class="footer__link">Portfolio</a>
+                </li>
+                <li>
+                    <a href="#contact" class="footer__link">Contact Me</a>
+                </li>
+            </ul>
+
+            <div class="footer__socials">
+                <a href="https://www.facebook.com/" target="_blank" class="footer__social">
+                    <i class="uil uil-facebook-f"></i>
+                </a>
+                
+                <a href="https://www.instagram.com/" target="_blank" class="footer__social">
+                    <i class="uil uil-instagram"></i>
+                </a>
+                    
+                <a href="https://twitter.com/" target="_blank" class="footer__social">
+                    <i class="uil uil-twitter-alt"></i>
+                </a>
+            </div>
+        </div>
+
+        <p class="footer__copy">&#169; TheAtomicChef. All rights reserved </p>
+    </div>
+</footer>
+
+
+
+<!-- Scroll Top -->
+<a href="#" class="scroll__up" id="scroll-up">
+    <i class="uil uil-arrow-up scrollup__icon"></i>
+</a>
+
+
+
+
+<!-- Main HTML -->
 
 
 
