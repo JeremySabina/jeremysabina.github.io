@@ -1,15 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 
+<!-- TODO
+- Fix profile picture in home
+- Fix qualifications bar
+- Fix Slider for projects
+ -->
+
+
 <head>
 <!--Unicons-->
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
 <!--Swiper-->
-    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css">
 <!--Text Font-->
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,800" rel="stylesheet">
 <!--Style Sheet-->
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
 <!--Title-->
     <title>Home of The Atomic Chef</title>
 </head>
@@ -97,7 +104,7 @@
                             165.547 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 
                             129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 
                             -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"/>
-                            <image class="home__blob-img" x="12" y="18" xlink:href="img/chefpic.jpg"/>
+                            <image class="home__blob-img" x="12" y="18" xlink:href="img/perfil.png"/>
                         </g>
                     </svg>
                 </div>
@@ -130,7 +137,7 @@
     <span class="section__subtitle">My Introduction</span>
 
     <div class="about__container container grid">
-        <img src="img/Atomicchefexplosion.jpg" alt="" class="about__img">
+        <img src="img/about.jpg" alt="" class="about__img">
 
         <div class="about__data">
             <p class="about__description">Experienced Chef with over 15 years of experience and hands on knowledge</p>
@@ -589,11 +596,11 @@
     <h2 class="section__title">Portfolio</h2>
     <span class="section__subtitle">Most Recten Work</span>
 
-    <div class="portfolio__container container mySwiper">
+    <div class="portfolio__container swiper-container container mySwiper">
         <div class="swiper-wrapper">
             <!-- Portfolio Content 1 -->
             <div class="portfolio__content grid swiper-slide">
-                <img src="img/Atomicchefexplosion.jpg" alt="" class="portfolio__img">
+                <img src="img/portfolio1.jpg" alt="" class="portfolio__img">
                 <div class="portfolio__data">
                     <h3 class="portfolio__title">Modern Website</h3>
                     <p class="portfolio__description">Website addabtable to all devices and animated interactions</p>
@@ -605,7 +612,7 @@
             </div>
                         <!-- Portfolio Content 2 -->
             <div class="portfolio__content grid swiper-slide">
-                <img src="img/carrotcake.JPG" alt="" class="portfolio__img">
+                <img src="img//portfolio2.jpg" alt="" class="portfolio__img">
                 <div class="portfolio__data">
                     <h3 class="portfolio__title">Cooking</h3>
                     <p class="portfolio__description">Website addabtable to all devices and animated interactions</p>
@@ -617,7 +624,7 @@
             </div>
                         <!-- Portfolio Content 3 -->
             <div class="portfolio__content grid swiper-slide">
-                <img src="img/roses.jpg" alt="" class="portfolio__img">
+                <img src="img/portfolio3.jpg" alt="" class="portfolio__img">
                 <div class="portfolio__data">
                     <h3 class="portfolio__title">Baking</h3>
                     <p class="portfolio__description">Website addabtable to all devices and animated interactions</p>
@@ -645,8 +652,207 @@
 
 <!-- Project in Mind HTML -->
 
+<section class="project section">
+    <div class="project__bg">
+        <div class="project__container container grid">
+            <div class="project__data">
+                <h2 class="project__title">You have a new project</h2>
+                <p class="project__description">Contact me now to get a 30% discount on your next project!</p>
+                <a href="#contact" class="button button--flex button--white">
+                    Contact Me
+                    <i class="uil uil-message project__icon button__icon"></i>
+                </a>
+            </div>
+
+            <img src="img/project.png" alt="" class="project__img">
+        </div>
+    </div>
+</section>
+
+
+
+
+<!-- Testimonial -->
+
+<section class="testimonial section">
+    <h2 class="section__title">Testimonial</h2>
+    <span class="section__subtitle">My client saying</span>
+
+    <div class="testimonial__container container swiper-container">
+        <div class="swiper-wrapper">
+                <!-- Testimonial 1 -->
+            <div class="testimonial__content swiper-slide">
+                <div class="testimonial__data">
+                    <div class="testimonial__header">
+                        <img src="img/testimonial1.jpg" alt="" class="testimonial__img">
+
+                        <div>
+                            <h3 class="testimonial__name">Sara Smith</h3>
+                            <span class="testimonial__client">Client</span>
+                        </div>
+                    </div>
+
+                    <div>
+                    <i class="uil uil-star testimonial__icon-star"></i>
+                    <i class="uil uil-star testimonial__icon-star"></i>
+                    <i class="uil uil-star testimonial__icon-star"></i>
+                    <i class="uil uil-star testimonial__icon-star"></i>
+                    <i class="uil uil-star testimonial__icon-star"></i>
+                    </div>
+                </div>
+
+                <p class="testimonial__description">I loved it and he totally 
+                    did everything I asked for.
+                </p>
+
+            </div>
+            
+                            <!-- Testimonial 2 -->
+                            <div class="testimonial__content swiper-slide">
+                                <div class="testimonial__data">
+                                    <div class="testimonial__header">
+                                        <img src="img/testimonial2.jpg" alt="" class="testimonial__img">
+                
+                                        <div>
+                                            <h3 class="testimonial__name">Hank</h3>
+                                            <span class="testimonial__client">Client</span>
+                                        </div>
+                                    </div>
+                
+                                    <div>
+                                    <i class="uil uil-star testimonial__icon-star"></i>
+                                    <i class="uil uil-star testimonial__icon-star"></i>
+                                    <i class="uil uil-star testimonial__icon-star"></i>
+                                    <i class="uil uil-star testimonial__icon-star"></i>
+                                    <i class="uil uil-star testimonial__icon-star"></i>
+                                    </div>
+                                </div>
+                
+                                <p class="testimonial__description">I loved it and he totally 
+                                    did everything I asked for.
+                                </p>
+                
+                            </div>
+
+
+                                            <!-- Testimonial 3 -->
+            <div class="testimonial__content swiper-slide">
+                <div class="testimonial__data">
+                    <div class="testimonial__header">
+                        <img src="img/testimonial3.jpg" alt="" class="testimonial__img">
+
+                        <div>
+                            <h3 class="testimonial__name">Paul</h3>
+                            <span class="testimonial__client">Client</span>
+                        </div>
+                    </div>
+
+                    <div>
+                    <i class="uil uil-star testimonial__icon-star"></i>
+                    <i class="uil uil-star testimonial__icon-star"></i>
+                    <i class="uil uil-star testimonial__icon-star"></i>
+                    <i class="uil uil-star testimonial__icon-star"></i>
+                    <i class="uil uil-star testimonial__icon-star"></i>
+                    </div>
+                </div>
+
+                <p class="testimonial__description">I loved it and he totally 
+                    did everything I asked for.
+                </p>
+
+            </div>
+
+            <div class="swiper-pagination swiper-pagination-testimonial"></div>
+            
+        </div>
+    </div>
+</section>
+
+
+<!-- Contact Me -->
+
+<section class="contact section" id="contact">
+    <h2 class="section__title">Contact Me</h2>
+    <span class="section__subtitle">Get in touch</span>
+
+    <div class="contact__container container grid">
+        <div>
+            <div class="contact__information">
+                <i class="uil uil-phone contact__icon"></i>
+
+                <div>
+                    <h3 class="contact__title">Call Me</h3>
+                    <span class="contact__subtitles">555-555-5555</span>
+                </div>
+            </div>
+
+            <div class="contact__information">
+                <i class="uil uil-envelope contact__icon"></i>
+
+                <div>
+                    <h3 class="contact__title">Email</h3>
+                    <span class="contact__subtitles">555-555-5555</span>
+                </div>
+            </div>
+
+            <div class="contact__information">
+                <i class="uil uil-map-marker contact__icon"></i>
+
+                <div>
+                    <h3 class="contact__title">Location</h3>
+                    <span class="contact__subtitles">555-555-5555</span>
+                </div>
+            </div>
+        </div>
+
+        <form action="" class="contact__form grid">
+            <div class="contact__inputs grid">
+                <div class="contact__content">
+                    <label for="" class="contact__label">Name</label>
+                    <input type="text" class="contact__input">
+                </div>
+                <div class="contact__content">
+                    <label for="" class="contact__label">Email</label>
+                    <input type="text" class="contact__input">
+                </div>
+                <div class="contact__content">
+                    <label for="" class="contact__label">Project</label>
+                    <input type="text" class="contact__input">
+                </div>
+                <div class="contact__content">
+                    <label for="" class="contact__label">Message</label>
+                    <textarea name="" id="" cols="0" rows="7" class="contact__input"></textarea>
+                </div>
+
+                <div>
+                    <a href="" class="button button--flex">
+                        Send Message
+                        <i class="uil uil-message button__icon"></i>
+                    </a>
+                </div>
+            </div>
+        </form>
+
+
+    </div>
+</section>
+
+
+
+
+
 <!-- Main HTML -->
 
+
+
+
+
+<!-- Main HTML -->
+
+
+
+
+<!-- Main HTML -->
 
 
 
@@ -684,8 +890,8 @@
     <div class="loading-text">0%</div> -->
 
     <!-- Swiper Script  -->
-    <script src="js/swiper-bundle.min.js"></script> 
+    <script src="./js/swiper-bundle.min.js"></script> 
     <!-- Main Script  -->
-    <script src="js/main.js"></script> 
+    <script src="./js/main.js"></script> 
 </body>
 </html>
